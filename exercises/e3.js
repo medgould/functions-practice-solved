@@ -16,8 +16,22 @@
 
 // Your code goes here...
 
+console.log('EXERCISE 3:'); 
+
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2){
+
+  for (var i = 0; i < arr.length; i++) {
+
+    if (arr[i] > val1 && arr[i] < val2) {
+      return true;
+    }
+  }
+  return false;
+}
 
 
+console.log(doesArrayIncludeItemsBetweenVals([2,4,2], 3, 5));
+console.log(doesArrayIncludeItemsBetweenVals([2,4,2], 5, 10));
 
 /**
  * ====================================================
@@ -36,6 +50,43 @@
 
 // Your code goes here...
 
+console.log('Named Function');
+
+function getValueWithConditionOne(var1,var2) {
+  if(var1 == 40  && var2 == 40){
+    return var1 + var2;
+  }else {
+    return (var1 + var2)*2;
+  }
+}
+console.log(getValueWithConditionOne(100, 100));
+console.log(getValueWithConditionOne(40, 60));
+
+console.log('Arrow Function'); 
+
+const getValueWithConditionTwo = (var1, var2) => {
+  if(var1 == 40  && var2 == 40){
+    return var1 + var2;
+  }else {
+    return (var1 + var2)*2;
+  }
+}
+
+console.log(getValueWithConditionTwo(100, 100));
+console.log(getValueWithConditionTwo(40, 60));
+
+
+console.log('Expression Function'); 
+const getValueWithConditionThree = function (var1, var2) {
+  if(var1 == 40  && var2 == 40){
+    return var1 + var2;
+  }else {
+    return (var1 + var2)*2;
+  }
+}
+
+console.log(getValueWithConditionThree(100, 100));
+console.log(getValueWithConditionThree(40, 60));
 
 
 

@@ -15,8 +15,11 @@
 
 // Your code goes here
 
+function logMessage() {
+  console.log('Hello, World!');
+}
 
-
+logMessage();
 
 /**
  * =============================================================
@@ -32,6 +35,12 @@
 // Your code goes here...
 
 
+function logMyMessage(f) {
+  console.log(f); 
+}
+
+var myMessageToLog = 'I log my first message!';
+logMyMessage(myMessageToLog);
 
 
 /**
@@ -47,23 +56,32 @@
 // Your code goes here...
 
 
-
+function logMessageWithMyName(f) {
+  console.log('My name is ' + f + '!')  ;
+}
+var inputName = 'Andrey';
+logMessageWithMyName(inputName);
 
 /**
- * ==============================================================
- * Create a function that works as follows:
+  * ==============================================================
+  * Create a function that works as follows:
   * the function name is 'logMyInfo' strictly.
   * The function MUST use NAMED function syntax.
   * The function of logs a message of 'My name is <name>. I am <age> years old!'.
   * The name is a string value passed as an argument.
   * The age is a number value passed as an argument.
- * logMyInfo('Andrey', 18) => 'My name is Andrey. I am 18 years old!'
+  * logMyInfo('Andrey', 18) => 'My name is Andrey. I am 18 years old!'
 */
 
 // Your code goes here...
 
+function logMyInfo(name, age) {
+  console.log('My name is ' + name + '. I am ' + age + ' years old!') ;
+  }
 
-
+var name = 'Andrey';
+var age = 18;
+logMyInfo(name, age); 
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
